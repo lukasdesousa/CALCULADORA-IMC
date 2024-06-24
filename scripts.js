@@ -10,7 +10,7 @@ botao.addEventListener('click', clique)
 function clique() {
 info.innerHTML = ''
 if (peso.value === '') {
-    resultado.innerHTML = '<h2>Insira dados válidos</h2>'
+    resultado.innerHTML = '<h2 style="color: red">Insira dados válidos</h2>'
 } else {
 
     let imc = parseFloat(peso.value / (altura.value * altura.value)).toFixed(2)
