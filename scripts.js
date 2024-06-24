@@ -3,7 +3,11 @@ let altura = document.querySelector('.altura')
 let botao = document.querySelector('button')
 let info = document.querySelector('.informacoes')
 let resultado = document.querySelector('.resultado')
+let form = document.querySelector('form')
 
+form.addEventListener('submit', function (e) {
+    e.preventDefault()
+});
 
 botao.addEventListener('click', clique)
 
